@@ -7,7 +7,7 @@ admin.site.register(Service)
 
 @admin.register(Portfolio)
 class PortfolioAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'image')
+    list_display = ('name', 'category',)
     search_fields = ('name', 'category')
 
 @admin.register(ContactMessage)
