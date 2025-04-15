@@ -18,3 +18,6 @@ def home(request):
 
 def about(request):
     return render(request, 'index.html', {})
+
+def News(request):
+    return render(request, 'news.html', {})

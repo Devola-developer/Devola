@@ -5,7 +5,8 @@ from .import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('about', views.about, name='about')
+    path('about', views.about, name='about'),
+    path('news/', views.News, name='news')
 ]
 
 if settings.DEBUG:
