@@ -1,14 +1,6 @@
 from django.contrib import admin
-from .models import Service, Portfolio, ContactMessage
+from .models import ContactMessage
 # Register your models here.
-
-
-admin.site.register(Service)
-
-@admin.register(Portfolio)
-class PortfolioAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category',)
-    search_fields = ('name', 'category')
 
 @admin.register(ContactMessage)
 class ContactMessageAdmin(admin.ModelAdmin):
